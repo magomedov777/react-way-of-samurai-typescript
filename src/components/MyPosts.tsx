@@ -13,8 +13,8 @@ const MyPosts = () => {
                 
             </div>
             <div className={s.posts}>
-           <Post/>
-           <Post/>
+           <Post message={'Hello'}/>
+           <Post message={'How are you?'}/>
         </div>
     </div>
   )
