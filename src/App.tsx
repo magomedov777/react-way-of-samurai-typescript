@@ -1,29 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 
 const App = () => {
   return (
     <div className='app-wrapper'>
        <Header/>
-          <nav className='nav'>
-           <div>
-            <a>Profile</a>
-           </div>
-           <div>
-            <a>Messages</a>
-           </div>
-           <div>
-            <a>News</a>
-           </div>
-           <div>
-            <a>Music</a>
-           </div>
-           <div>
-            <a>Settings</a>
-           </div>
-         </nav>
+          <Navbar/>
           <div className='content'>
            <div>
             <img src='https://www.gannett-cdn.com/presto/2018/08/14/PTAL/6e4fff76-595d-4069-9112-cfe15dbfaa43-IMG_Stadium.jpeg?width=660&height=319&fit=crop&format=pjpg&auto=webp'/>
