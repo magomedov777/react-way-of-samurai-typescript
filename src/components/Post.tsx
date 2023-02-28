@@ -3,16 +3,20 @@ import s from './Post.module.css'
 
 
 type PropsPostType = {
-    message: String
+    message: String,
+    likes: Number
 };
 
 const Post = (props: PropsPostType) => {
   return (
     <div className={s.item}>
     <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"/>
-      {props.message}
       <div>
-        <span>like</span>
+      {props.message}
+      </div> 
+      
+      <div>
+        <>likes{props.likes}</>
       </div>
     </div>
   )
