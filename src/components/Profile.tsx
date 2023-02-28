@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Profile.css';
 
 
 const Profile = () => {
@@ -23,11 +24,8 @@ const Profile = () => {
             </div>
       </div>
     </div>
-  )
-}
-
-
-
+  );
+};
 
 
 export default Profile;
