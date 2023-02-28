@@ -4,9 +4,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <h1>
+    <div>
     
-    </h1>
+    </div>
   );
 };
 
