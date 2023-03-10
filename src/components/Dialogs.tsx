@@ -2,11 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
 
-
 type DialogItemPropsType = {
   name: string
   id: string
-  
 };
 
 type MessageType = {
@@ -42,8 +40,8 @@ const Dialogs = (props: DialogItemPropsType) => {
         <Message message={'What are your doing?'}/>
        </div>
     </div>
-  )
-}
+  );
+};
 
 
 
