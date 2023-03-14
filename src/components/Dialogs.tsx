@@ -4,7 +4,7 @@ import s from './Dialogs.module.css';
 
 type DialogItemPropsType = {
   name: string
-  id: string
+  id: Number
 };
 
 type MessageType = {
@@ -30,18 +30,17 @@ const Dialogs = (props: DialogItemPropsType) => {
     {id: 3, name: 'Sveta'},
     {id: 4, name: 'Sasha'},
     {id: 5, name: 'Victor'},
-    {id: 6, name: 'Vima'}
-
-  ]
+    {id: 6, name: 'Valera'},
+]
   return (
     <div className={s.dialogs}>
      <div className={s.dialogsItems}>
-      <DialogItem name={'Dima'} id={'1'}/>
-      <DialogItem name={'Andrew'} id={'2'}/>
-      <DialogItem name={'Sveta'} id={'3'}/>
-      <DialogItem name={'Sasha'} id={'4'}/>
-      <DialogItem name={'Victor'} id={'5'}/>
-      <DialogItem name={'Valera'} id={'6'}/>
+      <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
+      <DialogItem name={'Andrew'} id={2}/>
+      <DialogItem name={'Sveta'} id={3}/>
+      <DialogItem name={'Sasha'} id={4}/>
+      <DialogItem name={'Victor'} id={5}/>
+      <DialogItem name={'Valera'} id={6}/>
      </div>
        <div className={s.messages}>
         <Message message={'Hello'}/>
