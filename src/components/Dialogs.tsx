@@ -41,9 +41,9 @@ let messages = [
   {id: 5, message: 'hi'},
 ]
 
-let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id}/>) 
+let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id}/>); 
 
-let messagesElements = messages.map(m => <Message message={m.message}/>)
+let messagesElements = messages.map(m => <Message message={m.message}/>);
   return (
     <div className={s.dialogs}>
      <div className={s.dialogsItems}>
