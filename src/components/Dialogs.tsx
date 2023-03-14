@@ -33,7 +33,7 @@ const Dialogs = (props: DialogItemPropsType) => {
     {id: 6, name: 'Valera'},
 ]
 
-let dialogsElements = dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>) 
+let dialogsElements = dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>) 
 
   let messagesData = [
   {id: 1, message: 'Hello'},
@@ -42,6 +42,10 @@ let dialogsElements = dialogsData.map(dialog => <DialogItem name={dialog.name} i
   {id: 4, message: 'hi'},
   {id: 5, message: 'hi'},
 ]
+
+let messagesElements = messagesData.map(m => <Message message={m.message}/>)
+  
+
   return (
     <div className={s.dialogs}>
      <div className={s.dialogsItems}>
