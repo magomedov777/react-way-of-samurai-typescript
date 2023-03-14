@@ -47,12 +47,4 @@ let messagesElements = messages.map(m => <Message message={m.message}/>);
 };
 
 
-
-
-
-
-
-
-
-
 export default Dialogs;
