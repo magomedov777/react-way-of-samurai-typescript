@@ -24,6 +24,15 @@ const Message = (props: MessageType) => {
   return (<div className={s.message}>{props.message}</div>)}
 
 const Dialogs = (props: DialogItemPropsType) => {
+  let dialogsData = [
+    {id: 1, name: 'Dima'},
+    {id: 2, name: 'Andrew'},
+    {id: 3, name: 'Sveta'},
+    {id: 4, name: 'Sasha'},
+    {id: 5, name: 'Victor'},
+    {id: 6, name: 'Vima'}
+
+  ]
   return (
     <div className={s.dialogs}>
      <div className={s.dialogsItems}>
