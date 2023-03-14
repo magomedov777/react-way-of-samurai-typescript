@@ -4,6 +4,10 @@ import Post from './Post';
 
 
 const MyPosts = () => {
+  let postsData = [
+    {id: 1, message: 'Good morning', likes: 17},
+    {id: 2, message: 'What do your doing?', likes: 27},
+    ]
   return (
     <div className={s.postsBlock}>
         <h3>My posts</h3>My posts

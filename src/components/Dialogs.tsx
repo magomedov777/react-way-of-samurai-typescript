@@ -51,9 +51,9 @@ let messagesData = [
       <DialogItem name={dialogsData[5].name} id={dialogsData[5].id}/>
      </div>
        <div className={s.messages}>
-        <Message message={'Hello'}/>
-        <Message message={'How are you?'}/>
-        <Message message={'What are your doing?'}/>
+        <Message message={messagesData[0].message}/>
+        <Message message={messagesData[1].message}/>
+        <Message message={messagesData[2].message}/>
        </div>
     </div>
   );
