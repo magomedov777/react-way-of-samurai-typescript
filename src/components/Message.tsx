@@ -1,9 +1,12 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import type { MessageType } from './Dialogs';
+import { StatePropsType } from './state';
 
-const Message = (props: MessageType) => {
-    return (<div className={s.message}>{props.message}</div>)}
+type MessageType = {
+    messages: string
+}
+const Message = (props:MessageType ) => {
+    return (<div className={s.message}>{props.messages}</div>)}
 
 
 
