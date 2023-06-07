@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import state from './components/state';
+import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
-    <App state={state}/>,
+  <BrowserRouter>
+    <App state={state}/>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function

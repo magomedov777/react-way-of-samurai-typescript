@@ -1,13 +1,14 @@
-import React from 'react';
+import React  from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post';
 import { PostsType, StatePropsType } from './state';
 
-type MyPostsType = {
-  posts: PostsType[]
-}
+
 const MyPosts = (props: MyPostsType) => {
  let postsElements = props.posts.map(p => <Post message={p.message} likes={p.likes}/>)
+
+//  let newPostElement = React.createRef();
+
   return (
     <div className={s.postsBlock}>
         <h3>My posts</h3>My posts
@@ -16,7 +17,7 @@ const MyPosts = (props: MyPostsType) => {
                 <textarea></textarea>
               </div>
               <div>
-                <button>Add post</button>
+                <button onClick={() => {}}>Add post</button>
               </div>
             </div>
             <div className={s.posts}>
